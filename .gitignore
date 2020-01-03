@@ -27,4 +27,6 @@ hs_err_pid*
 #custom ignore
 .idea
 .gradle
+build
+out
 
