@@ -1,15 +1,17 @@
-package com.lucenegrpc.server;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+package com.github.tonyking97.lucenegrpc.lucene;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.*;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.NIOFSDirectory;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Indexer {
     public Indexer() {
